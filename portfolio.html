@@ -500,9 +500,10 @@
   </div>
 </div><script src="http://aksisoft.com/js/plugins.min.js"></script>
 <script src="http://aksisoft.com/js/app.min.js"></script>
-<script src="http://aksisoft.com/js/configurator.min.js?t=1509558346"></script>
-<script src="http://aksisoft.com/js/home-generic-7.js?t=1509558346"></script>
-<!-- <script src="http://aksisoft.com/js/index.js?t=1509558346"></script> -->
+<script src="http://aksisoft.com/js/configurator.min.js?t=1511442683"></script>
+<script src="http://aksisoft.com/js/home-generic-7.js?t=1511442683"></script>
+<!-- <script src="http://aksisoft.com/js/index.js?t=1511442683"></script> -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
 <script>
   $(document).ready(function () {
     var sec_REQURI = "portfolio";
@@ -513,6 +514,21 @@
         $(this).addClass('active');
       }
     })
+    $('#formsubmit').submit(function () {
+      $(".status").empty().html('menunggu terkirim ke server ...');
+      $(this).ajaxSubmit({
+        error: function (xhr) {
+          console.log(xhr);
+          $(".status").empty().html('Error: ' + xhr.status);
+          return false;
+        },
+        success: function (response) {
+          $("#formsubmit").empty().html('<p>Terima kasih sudah menghubungi kami.</p>');
+          return false;
+        }
+      })
+      return false;
+    });
   });
 </script></body>
 </html>
