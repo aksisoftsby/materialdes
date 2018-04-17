@@ -4,8 +4,8 @@
 # jekyll serve --incremental --host 0.0.0.0
 title: "Aksisoft MEDIA Jasa Pembuatan Website, Android, Web Hosting Surabaya"
 description: "Jasa Pembuatan Website, Android, Web Hosting Surabaya - Aksisoft MEDIA"
-url: http://aksisoft.com
-# url: http://127.0.0.1:4000
+# url: http://aksisoft.com
+url: http://127.0.0.1:4000
 loading_teks: Aksisoft Media
 stylever: 23
 
