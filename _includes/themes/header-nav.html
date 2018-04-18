@@ -13,7 +13,7 @@
 				{% for mn in site.data.menu %}
 				{% assign ch = mn.child %}
 				{% if ch %}
-				<li class=" dropdown">
+				{% if page.pg == mn.submenu %}<li class='active dropdown'>{% else %}<li class='dropdown'>{% endif %}
 					<a href="javascript:void(0)" 
 								class="dropdown-toggle animated fadeIn animation-delay-4" 
 								data-toggle="dropdown" 
@@ -47,7 +47,8 @@
 					</ul>
 				</li>
 				{% else %}
-				<li class='active'><a href='{{ site.url }}/{{ mn.url }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
+				{% if page.pg == mn.pg %}<li class='active'>{% else %}<li>{% endif %}
+					<a href='{{ site.url }}/{{ mn.url }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
 				{% endif %}
 				{% endfor %}
 			</ul>

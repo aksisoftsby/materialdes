@@ -1,0 +1,29 @@
+<div class="panel-menu collapse" id="collapseMenu">
+	<ul class="panel-group ms-collapse-nav" id="components-nav" role="tablist" aria-multiselectable="true">
+		{% for mn in site.data.menu %}
+		{% assign ch = mn.child %}
+		{% if ch %}
+		{% if page.pg == mn.submenu %}
+		{% for men in ch %}	
+		<li class="panel" role="tab" id="e{{ men.id }}">
+			<a role="button" data-toggle="collapse" data-parent="#components-nav" 
+						href="#side{{ men.id }}" aria-expanded="true" aria-controls="c1" class="collapsed withripple">
+				<i class="{{ men.icon }}"></i> {{ men.title }}</a>
+			{% if men.child %} {% assign inout = 'out' %}
+			{% for mmm in men.child %} 	{% assign this_side = '/' | append: mn.submenu | append: '/' | append: mmm.url %}
+			{% if page.url == this_side %} {% assign inout = 'in' %} {% endif %} {% endfor %}
+			<ul id="side{{ men.id }}" class="panel-collapse collapse {{ inout }}" role="tabpanel" aria-labelledby="e{{ men.id }}">
+				{% for mmm in men.child %} {% assign this_side = '/' | append: mn.submenu | append: '/' | append: mmm.url %} 
+				<li> {% if mmm.url %} 
+					<a class='withripple {% if page.url == this_side %}active{% endif %}' href="{{ site.url }}/{{ mn.submenu }}/{{ mmm.url }}" title="{{ mmm.title }}">
+						{% else %}<a class='withripple' href="#">{% endif %}{{ mmm.title }}</a></li>
+				{% endfor %} 
+			</ul>
+			{% endif %}
+		</li>
+		{% endfor %}
+		{% endif %}
+		{% endif %}
+		{% endfor %}
+	</ul>
+</div>

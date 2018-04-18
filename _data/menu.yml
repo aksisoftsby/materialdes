@@ -1,12 +1,13 @@
 - url: 
   title: Aksisoft MEDIA
   name: Home
+  pg: home
   icon: zmdi zmdi-home
 - url: #
   title: Produk Aksisoft MEDIA
   sidebar: produk
   name: Produk
-  submenu: produk
+  submenu: "produk"
   child: 
    - title: Aplikasi Wordpress
      id: aplikasiwordpress
@@ -101,4 +102,5 @@
 - url: kontak
   title: Kontak Aksisoft MEDIA
   name: Kontak
+  pg: kontak
   icon: zmdi zmdi-account-box
