@@ -1,2 +1,104 @@
-- url: Home
-  
+- url: 
+  title: Aksisoft MEDIA
+  name: Home
+  icon: zmdi zmdi-home
+- url: #
+  title: Produk Aksisoft MEDIA
+  sidebar: produk
+  name: Produk
+  submenu: produk
+  child: 
+   - title: Aplikasi Wordpress
+     id: aplikasiwordpress
+     icon: zmdi zmdi-desktop-windows
+     child: 
+      - title: Aplikasi Wordpress Berita
+   - title: Demo Aplikasi Wordpress
+     id: demoaplikasiwordpress
+     icon: zmdi zmdi-open-in-new
+   - title: Hosting Indonesia
+     id: hostingindonesia
+     icon: zmdi zmdi-shield-check
+     child: 
+      - title: Hosting Indonesia
+        url: hosting
+      - title: Hosting Murah
+        url: hosting-murah
+   - title: Hosting Murah
+     id: hostingmurah
+     icon: zmdi zmdi-globe
+     child: 
+      - title: Hosting Murah
+        url: hosting-murah
+   - title: MandatApp
+     id: mandatapp
+     icon: zmdi zmdi-storage
+     child: 
+      - title: Mandat-app
+        url: mandatapp-detail
+      - title: New Update
+        url: mandatapp-update
+      - title: Changelog
+        url: mandatapp-changelog
+      - title: Sewa Mandat-app
+        url: mandatapp-order
+   - title: Wedding dan Prewedding
+     id: weddingdanprewedding
+     icon: zmdi zmdi-movie-alt
+     child: 
+      - title: Paket Wedding dan Prewedding
+        url: weddingdanprewedding-paket
+   - title: Photobooth
+     id: photobooth
+     icon: zmdi zmdi-camera-bw
+     child: 
+      - title: Paket Photobooth
+        url: photobooth-murah
+   - title: Foto Dokumentasi
+     id: fotodokumentasi
+     icon: zmdi zmdi-book-image
+     child: 
+      - title: Paket Jasa Foto Dokumentasi
+        url: fotodokumentasi-paket
+   - title: Plakat Akrilik
+     id: plakatakrilik
+     icon: zmdi zmdi-graduation-cap
+     child: 
+      - title: Paket Plakat/Piala Akrilik
+        url: plakatakrilik-paket
+   - title: Sewa Baju
+     id: sewabaju
+     icon: zmdi zmdi-account-calendar
+     child: 
+      - title: Paket Sewa baju Wisuda
+        url: sewabaju-wisuda
+      - title: Paket Sewa baju Manasik
+        url: sewabaju-manasik
+- url: #
+  title: Tutorial
+  name: Tutorial
+  sidebar: tutorial
+  submenu: tutorial
+  child: 
+   - title: Wordpress
+     id: tutorwordpress
+     icon: zmdi zmdi-edit
+     child: 
+      - title: Membuat Halaman
+        url: wordpress-membuat-halaman
+      - title: Menambah User
+        url: wordpress-menambahkan-user
+      - title: Membuat posting Berita dengan category
+        url: wordpress-membuat-posting-berita
+   - title: WP Woocommerce
+     id: tutorwoocommerce
+     icon: zmdi zmdi-shopping-cart
+     child: 
+      - title: Menambahkan Customer via admin
+        url: wpwoocommerce-manambah-customer-via-admin
+      - title: Menambahkan Produk Penjualan
+        url: wpwoocommerce-manambah-produk-jualan
+- url: kontak
+  title: Kontak Aksisoft MEDIA
+  name: Kontak
+  icon: zmdi zmdi-account-box

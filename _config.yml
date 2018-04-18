@@ -1,21 +1,23 @@
-# global settings
-# command 
-# jekyll serve --incremental
-# jekyll serve --incremental --host 0.0.0.0
-title: "Aksisoft MEDIA Jasa Pembuatan Website, Android, Web Hosting Surabaya"
+title: "Aksisoft MEDIA"
 description: "Jasa Pembuatan Website, Android, Web Hosting Surabaya - Aksisoft MEDIA"
-url: http://aksisoft.com
+url: https://aksisoft.com
 # url: http://127.0.0.1:4000
 loading_teks: Aksisoft Media
 stylever: 23
 
 info_logourl: logo-sbyad.png
 info_logourlpp: pp-logo-sbyad.png
-info_email: admin@aksisoft.com
-info_alamat: "Jl. Bratang Surabaya"
-info_whatsapp: 085892910032
+email: admin@aksisoft.com
+alamat: "Jl. Bratang Surabaya"
+whatsapp: 085892910032
 
+facebook: https://www.facebook.com/Aksisoft/
+twitter: #
 
+collections:
+  produk:
+    output: true
+    permalink: /:collection/:name
 
 plugins:
   - jekyll-avatar
