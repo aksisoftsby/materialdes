@@ -12,7 +12,21 @@ alamat: "Jl. Bratang Surabaya"
 whatsapp: 085892910032
 
 facebook: https://www.facebook.com/Aksisoft/
-twitter: https://twitter.com/aksisoft
+twitter: 
+  username: aksisoft
+
+social:
+  name: Aksisoft MEDIA
+  links:
+    - https://twitter.com/aksisoft
+    - https://www.facebook.com/aksisoft
+
+author:
+  twitter: aksisoft
+  facebook: aksisoft
+
+webmaster_verifications:
+  google: THwvIRN0ae05eoIXRES7gFTkoVJrPXHVnvmwbVPJPVI
 
 collections:
   produk:
