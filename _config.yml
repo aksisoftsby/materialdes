@@ -38,13 +38,9 @@ collections:
   tutorial:
     output: true
     permalink: /:collection/:name
-
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      permalink: /:collection/:name
+  post:
+    output: true
+    permalink: /:collection/:name
 
 plugins:
   - jekyll-avatar
