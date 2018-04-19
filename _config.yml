@@ -29,6 +29,8 @@ author:
 webmaster_verifications:
   google: THwvIRN0ae05eoIXRES7gFTkoVJrPXHVnvmwbVPJPVI
 
+lang: id_ID
+
 collections:
   produk:
     output: true
