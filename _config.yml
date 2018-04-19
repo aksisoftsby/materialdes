@@ -38,7 +38,7 @@ collections:
   tutorial:
     output: true
     permalink: /:collection/:name
-  post:
+  posts:
     output: true
     permalink: /:title
 
