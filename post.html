@@ -1,0 +1,14 @@
+---
+title: Artikel
+layout: home
+pg: post
+---
+{% for ic in site.posts %}
+<h3>
+	<a href='{{ site.url }}/{{ ic.url }}' title='{{ ic.title }}'>
+		{{ ic.title }}
+	</a>
+</h3>
+<p>{{ ic.description }}</p>
+<hr />
+{% endfor %}
