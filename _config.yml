@@ -40,7 +40,7 @@ collections:
     permalink: /:collection/:name
   post:
     output: true
-    permalink: /:collection/:name
+    permalink: /:title
 
 plugins:
   - jekyll-avatar
