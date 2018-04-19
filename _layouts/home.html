@@ -39,6 +39,8 @@
 			{% assign show = false %}
 			{% if page.pg == 'produk' %}{% assign show = true %}{% endif %}
 			{% if page.pg == 'tutorial' %}{% assign show = true %}{% endif %}
+			{% if page.pg == 'post' %}{% assign show = true %}{% endif %}
+			{% if page.pg == 'app' %}{% assign show = true %}{% endif %}
 			{% if page.full %}{% assign show = false %}{% endif %}
 			{% if show %}
 			<div class="material-background"></div>
