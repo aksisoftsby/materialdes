@@ -39,6 +39,13 @@ collections:
     output: true
     permalink: /:collection/:name
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      permalink: /:collection/:name
+
 plugins:
   - jekyll-avatar
   - jekyll-redirect-from
