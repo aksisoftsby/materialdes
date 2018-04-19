@@ -7,6 +7,7 @@
   title: Produk Aksisoft MEDIA
   sidebar: produk
   name: Produk
+  icon: zmdi zmdi-storage
   submenu: "produk"
   child: 
    - title: Aplikasi Wordpress
@@ -80,6 +81,7 @@
   name: Tutorial
   sidebar: tutorial
   submenu: tutorial
+  icon: zmdi zmdi-edit
   child: 
    - title: Wordpress
      id: tutorwordpress

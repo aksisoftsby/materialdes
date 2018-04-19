@@ -13,39 +13,8 @@
 				{% for mn in site.data.menu %}
 				{% assign ch = mn.child %}
 				{% if ch %}
-				{% if page.pg == mn.submenu %}<li class='active dropdown'>{% else %}<li class='dropdown'>{% endif %}
-					<a href="javascript:void(0)" 
-								class="dropdown-toggle animated fadeIn animation-delay-4" 
-								data-toggle="dropdown" 
-								data-hover="dropdown" data-name="{{ mn.submenu }}" title="{{ mn.title }}">{{ mn.name }}
-						<i class="zmdi zmdi-chevron-down"></i>
-					</a>
-					<ul class="dropdown-menu">
-						<li>
-							<div class="ms-menu-double">
-								<ul class="ms-menu-double-main-menu">
-									{% for men in ch %}
-									<li>
-										<a href="#{{ men.id }}" data-hover="tab" data-toggle="tab" title="{{ men.title }} {{ site.title }}">
-											<i class="{{ men.icon }}"></i> {{ men.title }}</a>
-									</li>
-									{% endfor %}
-								</ul>
-								<div class="tab-content ms-menu-double-submenu-container">
-									{% for men in ch %}
-									<div class="tab-pane" id="{{ men.id }}">
-										<ul class="ms-menu-double-submenu">{% if men.child %} 
-											{% for mmm in men.child %} <li> {% if mmm.url %}
-												<a href="{{ site.url }}/{{ mn.submenu }}/{{ mmm.url }}" title="{{ mmm.title }}">
-													{% else %}<a href="#">{% endif %}{{ mmm.title }}</a></li>
-											{% endfor %} {% endif %}</ul>
-									</div>
-									{% endfor %}
-								</div>
-							</div>
-						</li>
-					</ul>
-				</li>
+				{% if page.pg == mn.submenu %}<li class='active'>{% else %}<li>{% endif %}
+					<a href='{{ site.url }}/{{ mn.submenu }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
 				{% else %}
 				{% if page.pg == mn.pg %}<li class='active'>{% else %}<li>{% endif %}
 					<a href='{{ site.url }}/{{ mn.url }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>

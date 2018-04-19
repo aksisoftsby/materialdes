@@ -1,22 +1,10 @@
 {% for mn in site.data.menu %}
 {% assign ch = mn.child %}
 {% if ch %}
-{% for men in ch %}
-<li class="panel" role="tab" id="fm-{{ men.id }}">
-	<a class="collapsed" role="button" data-toggle="collapse" 
-				data-parent="#slidebar-menu" href="#f{{ men.id }}" 
-				aria-expanded="false" aria-controls="f{{ men.id }}">
-		<i class="{{ men.icon }}"></i> {{ men.title }} </a>
-	<ul id="f{{ men.id }}" 
-					class="panel-collapse collapse" role="tabpanel" aria-labelledby="fm-{{ men.id }}">
-		{% if men.child %} 
-		{% for mmm in men.child %} <li> {% if mmm.url %}
-			<a href="{{ site.url }}/{{ mn.submenu }}/{{ mmm.url }}" title="{{ mmm.title }}">
-				{% else %}<a href="#">{% endif %}{{ mmm.title }}</a></li>
-		{% endfor %} {% endif %}
-	</ul>
+<li>
+	<a class="link" href="{{ site.url }}/{{ mn.submenu }}" title='{{ mn.title }}'>
+		<i class="{{ mn.icon }}"></i> {{ mn.name }}</a>
 </li>
-{% endfor %}
 {% else %}
 <li>
 	<a class="link" href="{{ site.url }}/{{ mn.url }}" title='{{ mn.title }}'>
