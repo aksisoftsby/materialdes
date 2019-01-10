@@ -1,4 +1,12 @@
 ---
 title: Portfolio
+layout: home
 pg: portfolio
 ---
+<ul>
+	{% for ic in site.portfolio %}
+	<li>
+		<a href="{{ site.url }}{{ic.url}}">{{ ic.title }}</a>
+	</li>
+	{% endfor %}
+</ul>
