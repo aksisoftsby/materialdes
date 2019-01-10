@@ -10,14 +10,14 @@
   icon: zmdi zmdi-storage
   submenu: "produk"
   child: 
-   - title: Aplikasi Wordpress
-     id: aplikasiwordpress
-     icon: zmdi zmdi-desktop-windows
-     child: 
-      - title: Aplikasi Wordpress Berita
-   - title: Demo Aplikasi Wordpress
-     id: demoaplikasiwordpress
-     icon: zmdi zmdi-open-in-new
+#   - title: Aplikasi Wordpress
+#     id: aplikasiwordpress
+#     icon: zmdi zmdi-desktop-windows
+#     child: 
+#      - title: Aplikasi Wordpress Berita
+#   - title: Demo Aplikasi Wordpress
+#     id: demoaplikasiwordpress
+#     icon: zmdi zmdi-open-in-new
    - title: Hosting Indonesia
      id: hostingindonesia
      icon: zmdi zmdi-shield-check
@@ -32,18 +32,18 @@
      child: 
       - title: Hosting Murah
         url: hosting-murah
-   - title: MandatApp
-     id: mandatapp
-     icon: zmdi zmdi-storage
-     child: 
-      - title: Mandat-app
-        url: mandatapp-detail
-      - title: New Update
-        url: mandatapp-update
-      - title: Changelog
-        url: mandatapp-changelog
-      - title: Sewa Mandat-app
-        url: mandatapp-order
+#   - title: MandatApp
+#     id: mandatapp
+#     icon: zmdi zmdi-storage
+#     child: 
+#      - title: Mandat-app
+#        url: mandatapp-detail
+#      - title: New Update
+#        url: mandatapp-update
+#      - title: Changelog
+#        url: mandatapp-changelog
+#      - title: Sewa Mandat-app
+#        url: mandatapp-order
    - title: Wedding dan Prewedding
      id: weddingdanprewedding
      icon: zmdi zmdi-movie-alt
@@ -76,6 +76,31 @@
         url: sewabaju-wisuda
       - title: Paket Sewa baju Manasik
         url: sewabaju-manasik
+- url: #
+  title: Portfolio Aksisoft MEDIA
+  name: Portfolio
+  sidebar: portfolio
+  submenu: "portfolio"
+  icon: zmdi zmdi-badge-check
+  child: 
+   - title: Portfolio Website
+     id: portfoliowebsite
+     icon: zmdi zmdi-globe-alt
+     child: 
+      - title: Portfolio Website
+        url: website
+   - title: Portfolio Foto
+     id: portfoliofoto
+     icon: zmdi zmdi-book-image
+     child: 
+      - title: Portfolio Foto
+        url: foto
+   - title: Portfolio Desain
+     id: portfoliodesain
+     icon: zmdi zmdi-group
+     child: 
+      - title: Portfolio Desain
+        url: desain
 - url: #
   title: Tutorial
   name: Tutorial
