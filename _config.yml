@@ -39,6 +39,9 @@ collections:
   produk:
     output: true
     permalink: /:collection/:name
+  portfolio:
+    output: true
+    permalink: /:collection/:name
   tutorial:
     output: true
     permalink: /:collection/:name
