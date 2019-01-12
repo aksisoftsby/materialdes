@@ -32,6 +32,12 @@
      child: 
       - title: Hosting Murah
         url: hosting-murah
+   - title: Jasa Design
+     id: jasadesign
+     icon: zmdi zmdi-border-color
+     child: 
+      - title: Paket Jasa Desain Logo Murah
+        url: jasa-desain-logo-murah
 #   - title: MandatApp
 #     id: mandatapp
 #     icon: zmdi zmdi-storage
