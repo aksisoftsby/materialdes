@@ -10,6 +10,10 @@
   url: http://kpu-surabayakota.go.id/
   desc: Website Komisi Pemilihan Umum Kota Surabaya
   image: web/kpusurabaya.jpg
+- title: KPU Papua Barat
+  url: https://kpu-papuabaratprov.go.id/
+  desc: Website Komisi Pemilihan Umum Provinsi Papua Barat
+  image: web/kpupapuabarat.jpg
 - title: KPU Kota Bojonegoro
   url: https://kab-bojonegoro.kpu.go.id/
   desc: Website Komisi Pemilihan Umum Kota Bojonegoro
