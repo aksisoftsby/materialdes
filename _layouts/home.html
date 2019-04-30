@@ -76,7 +76,17 @@
 							<div class="ms-paper-content">
 								{{ content }}
 								{% if page.pg == 'post' %}
-								
+								{% assign site.tags = "" %}
+{% for tag in rawtags %}
+  {% if tag != "" %}
+    {% if tags == "" %}
+      {% assign tags = tag | split:'|' %}
+    {% endif %}
+    {% unless tags contains tag %}
+      {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
 								{% endif %}
 								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 								<ins class="adsbygoogle"
@@ -86,7 +96,7 @@
 													data-ad-client="ca-pub-8797559827267652"
 													data-ad-slot="8680364632"></ins>
 								<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
+								(adsbygoogle = window.adsbygoogle || []).push({});
 								</script>
 							</div>
 						</div>
