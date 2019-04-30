@@ -1,7 +1,7 @@
 ---
 title: Membaca Cepat
 category: umum
-tags: [ "Baca cepat", "Baca Buku", "Membaca Cepat", "Aplikasi Baca Cepat" ]
+tags: baca-cepat baca baca-buku membaca-cepat
 layout: home
 pg: post
 ---
