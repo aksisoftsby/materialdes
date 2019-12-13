@@ -32,6 +32,12 @@
      child:
       - title: Hosting Murah
         url: hosting-murah
+   - title: Aplikasi Property
+     id: aplikasiproperty
+     icon: zmdi zmdi-view-dashboard
+     child:
+      - title: Aplikasi Property Web dan Android
+        url: aplikasi-property
    - title: Jasa Design
      id: jasadesign
      icon: zmdi zmdi-border-color
