@@ -132,11 +132,6 @@
         url: wpwoocommerce-manambah-customer-via-admin
       - title: Menambahkan Produk Penjualan
         url: wpwoocommerce-manambah-produk-jualan
-- url: https://blog.aksisoft.com
-  title: Blog Aksisoft MEDIA
-  name: Blog
-  pg: blog
-  icon: zmdi zmdi-blogger
 - url: kontak
   title: Kontak Aksisoft MEDIA
   name: Kontak
