@@ -80,14 +80,14 @@
      child:
       - title: Paket Plakat/Piala Akrilik
         url: plakatakrilik-paket
-   - title: Sewa Baju
-     id: sewabaju
-     icon: zmdi zmdi-account-calendar
-     child:
-      - title: Paket Sewa baju Wisuda
-        url: sewabaju-wisuda
-      - title: Paket Sewa baju Manasik
-        url: sewabaju-manasik
+#   - title: Sewa Baju
+#     id: sewabaju
+#     icon: zmdi zmdi-account-calendar
+#     child:
+#      - title: Paket Sewa baju Wisuda
+#        url: sewabaju-wisuda
+#      - title: Paket Sewa baju Manasik
+#        url: sewabaju-manasik
 - url: #
   title: Portfolio Aksisoft MEDIA
   name: Portfolio
