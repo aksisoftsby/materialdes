@@ -6,7 +6,7 @@ pg: produk
 images: desain-aplikasi-perumahan.png
 ---
 
-# Aplikasi Property Web, Android
+## Aplikasi Property Web, Android
 
 ![Aplikasi Baru Propery]({{ site.baseurl }}/gambar/{{page.pg}}/{{ page.images }})
 
@@ -28,5 +28,6 @@ Alur Registrasi :
 - Mudah Sign in dengan Google baik di Web dan Android
 - User dapat membuat profilenya sendiri
 - User verifikasi hanya dengan login melalui akun Google tanpa password
+
 
  {%- include parts/kontak.md -%}
