@@ -15,7 +15,7 @@ Aplikasi ini adalah alat bantu penjualan anda dalam mempresentasikan produk anda
 
 Fitur Aplikasi Website dan Android semuanya hampir sama, dengan Admin Tools yang bisa diakses melalui website dan Web Browser Android
 
-Fitur Aplikasi : 
+#### Fitur Aplikasi : 
 - Listing Produk (Untuk semua listing yang dimasukkan kedalam database) dengan tampilan inset / card 
 - Detail Listing dengan Slideshow Gambar, Harga dan Fasilitas Fasilitas
 - Klik ke Masing masing Agent dari Masing masing Property (Bisa dimasukkan ke dalam umum)
@@ -24,10 +24,12 @@ Fitur Aplikasi :
 - View Maps (User Melihat tampilan maps dengan letak propertynya)
 - Advanced Search (User dapat mencari Listing sesuai dengan keinginannya, Contoh : Kamar 3, Carport dll)
 
-Alur Registrasi :
+#### Alur Registrasi :
 - Mudah Sign in dengan Google baik di Web dan Android
 - User dapat membuat profilenya sendiri
 - User verifikasi hanya dengan login melalui akun Google tanpa password
+
+### Kontak Kami
 
 hubungi Kami untuk Jasa {{ page.titlekontak }}
 
