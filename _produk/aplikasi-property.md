@@ -29,5 +29,4 @@ Alur Registrasi :
 - User dapat membuat profilenya sendiri
 - User verifikasi hanya dengan login melalui akun Google tanpa password
 
-
- {%- include parts/kontak.md -%}
+{%- include parts/kontak.md -%}
