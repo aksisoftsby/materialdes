@@ -38,4 +38,4 @@ Tim developer kami siap mengerjakan project ini dengan cepat, hubungi kami sekar
 Email : admin@aksisoft.com
 Whatsapp : [{{site.whatsapp}}](https://wa.me/{{site.whatsapp_62}})
 
-[Download Proposal Aplikasi Property](https://wa.me/{{site.whatsapp_62){: .btn .btn-primary}
+[Download Proposal Aplikasi Property](https://wa.me/{{site.whatsapp_62}}){: .btn .btn-primary}
