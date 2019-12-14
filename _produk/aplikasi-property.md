@@ -29,8 +29,6 @@ Alur Registrasi :
 - User dapat membuat profilenya sendiri
 - User verifikasi hanya dengan login melalui akun Google tanpa password
 
-### Kontak Kami
-
 hubungi Kami untuk Jasa {{ page.titlekontak }}
 
 Tim developer kami siap mengerjakan project ini dengan cepat, hubungi kami sekarang
