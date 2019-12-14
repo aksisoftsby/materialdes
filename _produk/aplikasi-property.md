@@ -29,13 +29,6 @@ Fitur Aplikasi Website dan Android semuanya hampir sama, dengan Admin Tools yang
 - User dapat membuat profilenya sendiri
 - User verifikasi hanya dengan login melalui akun Google tanpa password
 
-### Kontak Kami
-
-hubungi Kami untuk Jasa {{ page.titlekontak }}
-
-Tim developer kami siap mengerjakan project ini dengan cepat, hubungi kami sekarang
-
-Email : admin@aksisoft.com
-Whatsapp : [{{site.whatsapp}}](https://wa.me/{{site.whatsapp_62}})
+{%- include parts/kontak.md -%}
 
 [Download Proposal Aplikasi Property](https://wa.me/{{site.whatsapp_62}}){: .btn .btn-primary}
