@@ -8,7 +8,7 @@ images: desain-aplikasi-perumahan.png
 
 ## Aplikasi Property Web, Android
 
-![Aplikasi Baru Propery]({{ site.baseurl }}/gambar/{{page.pg}}/{{ page.images }})
+![Aplikasi Baru Propery]({{ site.baseurl }}/gambar/{{page.pg}}/{{ page.images }}){: .img-responsive}
 
 Aplikasi property Lengkap untuk Website dan Android bagi anda Pemilik Unit Apartment, Perumahan dan Hotel
 Aplikasi ini adalah alat bantu penjualan anda dalam mempresentasikan produk anda kepada Pelanggan
