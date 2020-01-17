@@ -2,17 +2,25 @@
 {% assign ch = mn.child %}
 {% if ch %}
 <li>
-	<a class="link" href="{{ site.url }}/{{ mn.submenu }}" title='{{ mn.title }}'>
-		<i class="{{ mn.icon }}"></i> {{ mn.name }}</a>
+  <a class="link" href="{{ site.url }}/{{ mn.submenu }}" title='{{ mn.title }}'>
+    <i class="{{ mn.icon }}"></i> {{ mn.name }}</a>
 </li>
 {% else %}
 <li>
-	<a class="link" href="{{ site.url }}/{{ mn.url }}" title='{{ mn.title }}'>
-		<i class="{{ mn.icon }}"></i> {{ mn.name }}</a>
+  <a class="link" href="{{ site.url }}/{{ mn.url }}" title='{{ mn.title }}'>
+    <i class="{{ mn.icon }}"></i> {{ mn.name }}</a>
 </li>
 {% endif %}
 {% endfor %}
 <li>
-	<a class="link" href="https://blog.aksisoft.com" title='Blog Aksisoft MEDIA'>
-		<i class="zdmi zdmi-blogger"></i> Blog</a>
+  <a class="link" href="https://blog.aksisoft.com" title='Blog Aksisoft MEDIA'>
+    <i class="zdmi zdmi-blogger"></i> Blog</a>
+</li>
+<li>
+  <a class="link" href="https://wedding.aksisoft.com" title='Wedding Planner'>
+    <i class="zdmi zdmi-cake"></i> Wedding Planner and Specialist</a>
+</li>
+<li>
+  <a class="link" href="https://gogoprint.aksisoft.com" title='Printing and Desain'>
+    <i class="zdmi zdmi-receipt"></i> Printing and Desain</a>
 </li>

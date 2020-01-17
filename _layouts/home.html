@@ -1,167 +1,167 @@
 <!DOCTYPE html>
 <html lang="id_ID">
-	<head>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({
-				google_ad_client: "ca-pub-8797559827267652",
-				enable_page_level_ads: true
-			});
-		</script>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="theme-color" content="#333">
-		<link rel='dns-prefetch' href='//aksisoft.com' />
-		<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
-		{% seo %}
-		<link rel="shortcut icon" href="{{ site.url }}/img/logo-persegi-panjang-century-gothic-300.png">
-		<link rel="stylesheet" href="{{ site.url }}/css/icon.css">
-		<link rel="stylesheet" href="{{ site.url }}/css/preload.min.css">
-		<link rel="stylesheet" href="{{ site.url }}/css/plugins.min.css">
-		<link rel="stylesheet" href="{{ site.url }}/css/style.red-500.min.css">
-		<link rel="stylesheet" href="{{ site.url }}/css/width-boxed.min.css" id="ms-boxed" disabled>
-		<link rel="stylesheet" href="{{ site.url }}/css/aksisoft-edit.css">
-	</head>
-	<body>
-		<div id="ms-preload" class="ms-preload">
-			<div id="status">
-    <div class="spinner">
-					<div class="dot1"></div>
-					<div class="dot2"></div>
-    </div>
-			</div>
-		</div>
-		<div class="sb-site-container">
-			{% include themes/header.html %} 
-			{% include themes/header-nav.html %} 
-
-			{% assign show = false %}
-			{% if page.pg == 'produk' %}{% assign show = true %}{% endif %}
-			{% if page.pg == 'portfolio' %}{% assign show = true %}{% endif %}
-			{% if page.pg == 'tutorial' %}{% assign show = true %}{% endif %}
-			{% if page.pg == 'post' %}{% assign show = true %}{% endif %}
-			{% if page.pg == 'app' %}{% assign show = true %}{% endif %}
-			{% if page.full %}{% assign show = false %}{% endif %}
-			{% if show %}
-			<div class="material-background"></div>
-			<div class="container container-full">
-				<div class="ms-paper">
-					<div class="row">
-      <div class="col-md-3 ms-paper-menu-left-container">
-							<div class="ms-paper-menu-left">
-								<h3 class="ms-paper-menu-title">
-									<i class="zmdi zmdi-apps"></i> Data {{ page.pg | capitalize }}            
-									<a role="button" data-toggle="collapse" 
-												href="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" class="withripple">
-										<i class="zmdi zmdi-menu"></i>
-									</a>
-								</h3>
-								{% include themes/sidebar-nav.html %}
-
-							</div>
+  <head>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8797559827267652",
+        enable_page_level_ads: true
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <link rel='dns-prefetch' href='//aksisoft.com' />
+    <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+    {% seo %}
+    <link rel="shortcut icon" href="{{ site.url }}/img/logo-persegi-panjang-century-gothic-300.png">
+    <link rel="stylesheet" href="{{ site.url }}/css/icon.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/preload.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/plugins.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/style.red-500.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/css/width-boxed.min.css" id="ms-boxed" disabled>
+    <link rel="stylesheet" href="{{ site.url }}/css/aksisoft-edit.css">
+  </head>
+  <body>
+    <div id="ms-preload" class="ms-preload">
+      <div id="status">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
       </div>
-      <!-- col-md-3 -->
-      <div class="col-md-9 ms-paper-content-container">
-							<div class="ms-paper-content">
-								{{ content }}
-								{% if page.pg == 'post' %}
-								{% assign site.tags = "" %}
-{% for tag in rawtags %}
-  {% if tag != "" %}
-    {% if tags == "" %}
-      {% assign tags = tag | split:'|' %}
-    {% endif %}
-    {% unless tags contains tag %}
-      {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-								{% endif %}
-								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-								<ins class="adsbygoogle"
-													style="display:block; text-align:center;"
-													data-ad-layout="in-article"
-													data-ad-format="fluid"
-													data-ad-client="ca-pub-8797559827267652"
-													data-ad-slot="8680364632"></ins>
-								<script>
-								(adsbygoogle = window.adsbygoogle || []).push({});
-								</script>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{% else %}
-			{{ content }}
-			{% endif %}
-			{% include themes/footer-copyright.html %}
-		</div> <!-- site container -->
-		<!-- sb-site-container -->
-		<div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
-			<div class="sb-slidebar-container">
-				<header class="ms-slidebar-header">
-					<div class="ms-slidebar-login">
-						<a href="http://member.aksisoft.com/clientarea.php" class="withripple" target="_blank">
-							<i class="zmdi zmdi-account"></i> Login</a>
-					</div>
-					<div class="ms-slidebar-title">
-						<div class="ms-slidebar-t">
-							<span class="ms-logo ms-logo-sm">A</span>
-							<h3>Aksisoft 
-								<span>MEDIA</span>
-							</h3>
-						</div>
-					</div>
-				</header>
-				<ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-					{% include themes/footer-nav.html %}
-				</ul>
-				<div class="ms-slidebar-social ms-slidebar-block">
-					<h4 class="ms-slidebar-block-title">Social Links</h4>
-					<div class="ms-slidebar-social">
-						<a href="{{ site.facebook }}" target="_blank" 
-									class="btn-circle btn-circle-raised btn-facebook">
-							<i class="zmdi zmdi-facebook"></i>
-							<div class="ripple-container"></div>
-						</a>
-						<a href="https://twitter.com/{{ site.twitter.username }}" class="btn-circle btn-circle-raised btn-twitter">
-							<i class="zmdi zmdi-twitter"></i>
-							<div class="ripple-container"></div>
-						</a>
-						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google">
-							<i class="zmdi zmdi-google"></i>
-							<div class="ripple-container"></div>
-						</a>
-						<a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
-							<i class="zmdi zmdi-instagram"></i>
-							<div class="ripple-container"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+    </div>
+    <div class="sb-site-container">
+      {% include themes/header.html %} 
+      {% include themes/header-nav.html %} 
 
-		<script src="{{ site.url }}/js/plugins.min.js"></script>
-		<script src="{{ site.url }}/js/app.min.js"></script>
-		<script src="{{ site.url }}/js/configurator.min.js"></script>
-		<!-- <script src="{{ site.url }}/js/home-generic-7.js?t=1515849441"></script> -->
-		<!-- <script src="{{ site.url }}/js/index.js?t=1515849441"></script> -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
-		<script>var sec_REQURI = "{{ page.pg }}";</script>
-		<script src="{{ site.url }}/js/footer.js"></script>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117835003-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+      {% assign show = false %}
+      {% if page.pg == 'produk' %}{% assign show = true %}{% endif %}
+      {% if page.pg == 'portfolio' %}{% assign show = true %}{% endif %}
+      {% if page.pg == 'tutorial' %}{% assign show = true %}{% endif %}
+      {% if page.pg == 'post' %}{% assign show = true %}{% endif %}
+      {% if page.pg == 'app' %}{% assign show = true %}{% endif %}
+      {% if page.full %}{% assign show = false %}{% endif %}
+      {% if show %}
+      <div class="material-background"></div>
+      <div class="container container-full">
+        <div class="ms-paper">
+          <div class="row">
+            <div class="col-md-3 ms-paper-menu-left-container">
+              <div class="ms-paper-menu-left">
+                <h3 class="ms-paper-menu-title">
+                  <i class="zmdi zmdi-apps"></i> Data {{ page.pg | capitalize }}            
+                  <a role="button" data-toggle="collapse" 
+                     href="#collapseMenu" aria-expanded="false" aria-controls="collapseMenu" class="withripple">
+                    <i class="zmdi zmdi-menu"></i>
+                  </a>
+                </h3>
+                {% include themes/sidebar-nav.html %}
 
-			gtag('config', 'UA-117835003-1');
-		</script>
-	</body>
+              </div>
+            </div>
+            <!-- col-md-3 -->
+            <div class="col-md-9 ms-paper-content-container">
+              <div class="ms-paper-content">
+                {{ content }}
+                {% if page.pg == 'post' %}
+                {% assign site.tags = "" %}
+                {% for tag in rawtags %}
+                {% if tag != "" %}
+                {% if tags == "" %}
+                {% assign tags = tag | split:'|' %}
+                {% endif %}
+                {% unless tags contains tag %}
+                {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+                {% endunless %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                     style="display:block; text-align:center;"
+                     data-ad-layout="in-article"
+                     data-ad-format="fluid"
+                     data-ad-client="ca-pub-8797559827267652"
+                     data-ad-slot="8680364632"></ins>
+                <script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      {{ content }}
+      {% endif %}
+      {% include themes/footer-copyright.html %}
+    </div> <!-- site container -->
+    <!-- sb-site-container -->
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+      <div class="sb-slidebar-container">
+        <header class="ms-slidebar-header">
+          <div class="ms-slidebar-login">
+            <a href="http://member.aksisoft.com/clientarea.php" class="withripple" target="_blank">
+              <i class="zmdi zmdi-account"></i> Login</a>
+          </div>
+          <div class="ms-slidebar-title">
+            <div class="ms-slidebar-t">
+              <span class="ms-logo ms-logo-sm">A</span>
+              <h3>Aksisoft 
+                <span>MEDIA</span>
+              </h3>
+            </div>
+          </div>
+        </header>
+        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
+          {% include themes/footer-nav.html %}
+        </ul>
+        <div class="ms-slidebar-social ms-slidebar-block">
+          <h4 class="ms-slidebar-block-title">Social Links</h4>
+          <div class="ms-slidebar-social">
+            <a href="{{ site.facebook }}" target="_blank" 
+               class="btn-circle btn-circle-raised btn-facebook">
+              <i class="zmdi zmdi-facebook"></i>
+              <div class="ripple-container"></div>
+            </a>
+            <a href="https://twitter.com/{{ site.twitter.username }}" class="btn-circle btn-circle-raised btn-twitter">
+              <i class="zmdi zmdi-twitter"></i>
+              <div class="ripple-container"></div>
+            </a>
+            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google">
+              <i class="zmdi zmdi-google"></i>
+              <div class="ripple-container"></div>
+            </a>
+            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
+              <i class="zmdi zmdi-instagram"></i>
+              <div class="ripple-container"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="{{ site.url }}/js/plugins.min.js"></script>
+    <script src="{{ site.url }}/js/app.min.js"></script>
+    <script src="{{ site.url }}/js/configurator.min.js"></script>
+    <!-- <script src="{{ site.url }}/js/home-generic-7.js?t=1515849441"></script> -->
+    <!-- <script src="{{ site.url }}/js/index.js?t=1515849441"></script> -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+    <script>var sec_REQURI = "{{ page.pg }}";</script>
+    <script src="{{ site.url }}/js/footer.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117835003-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117835003-1');
+    </script>
+  </body>
 </html>
