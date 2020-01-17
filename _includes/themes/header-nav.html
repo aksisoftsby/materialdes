@@ -1,32 +1,34 @@
 <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-dark">
-	<div class="container container-full">
-		<div class="navbar-header">
-			<a class="navbar-brand" href="{{ site.url }}">
-				<span class="ms-logo ms-logo-sm">A</span>
-				<span class="ms-title">Aksisoft
-					<strong>MEDIA</strong>
-				</span>
-			</a>
-		</div>
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				{% for mn in site.data.menu %}
-				{% assign ch = mn.child %}
-				{% if ch %}
-				{% if page.pg == mn.submenu %}<li class='active'>{% else %}<li>{% endif %}
-					<a href='{{ site.url }}/{{ mn.submenu }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
-				{% else %}
-				{% if page.pg == mn.pg %}<li class='active'>{% else %}<li>{% endif %}
-					<a href='{{ site.url }}/{{ mn.url }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
-				{% endif %}
-				{% endfor %}
-				<li><a href="https://blog.aksisoft.com" title="Blog Aksisoft Media">Blog</a></li>
-			</ul>
-		</div>
-		<!-- navbar-collapse collapse -->
-		<a href="#" class="sb-toggle-left btn-navbar-menu">
-			<i class="zmdi zmdi-menu"></i>
-		</a>
-	</div>
-	<!-- container -->
+  <div class="container container-full">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{{ site.url }}">
+        <span class="ms-logo ms-logo-sm">A</span>
+        <span class="ms-title">Aksisoft
+          <strong>MEDIA</strong>
+        </span>
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        {% for mn in site.data.menu %}
+        {% assign ch = mn.child %}
+        {% if ch %}
+        {% if page.pg == mn.submenu %}<li class='active'>{% else %}<li>{% endif %}
+          <a href='{{ site.url }}/{{ mn.submenu }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
+        {% else %}
+        {% if page.pg == mn.pg %}<li class='active'>{% else %}<li>{% endif %}
+          <a href='{{ site.url }}/{{ mn.url }}' title='{{ mn.title }}'>{{ mn.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+        <li><a href="https://blog.aksisoft.com" title="Blog Aksisoft Media">Blog</a></li>
+        <li><a href="https://wedding.aksisoft.com" title="Wedding Planner & Specialist">Wedding Planner</a></li>
+        <li><a href="https://gogoprint.aksisoft.com" title="Print and Desain">Print and Desain</a></li>
+      </ul>
+    </div>
+    <!-- navbar-collapse collapse -->
+    <a href="#" class="sb-toggle-left btn-navbar-menu">
+      <i class="zmdi zmdi-menu"></i>
+    </a>
+  </div>
+  <!-- container -->
 </nav>
